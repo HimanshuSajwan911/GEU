@@ -10,5 +10,4 @@ public class Commandline {
 		System.out.println("Semester: " + Integer.parseInt(args[3]));
 		
 	}
-	
 }
