@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Circle</title>
+
+    <style>
+        .circle{
+            position:   relative;
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            background-color: blue;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="circle"></div>
+
+    <script>
+        let circle = document.querySelector('.circle');
+        
+        circle.addEventListener('click', moveCircle);
+
+        function moveCircle(){
+            
+            circle.style.top = '50px';
+            m += 50;
+        }
+    </script>
+    
+</body>
+</html>
