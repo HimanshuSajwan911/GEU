@@ -1,0 +1,81 @@
+
+<HTML>	
+	<HEAD>
+		<TITLE> Time Table </TITLE>
+		<style>
+			.yellow{
+				background-color: rgb(240, 236, 204);
+			}
+
+			.purple{
+				background-color: rgb(171, 167, 223);
+			}
+
+			.green{
+				background-color: rgb(169, 240, 172);
+			}
+
+		</style>
+		
+	</HEAD>
+
+	<BODY>
+	
+		<TABLE border = 5 align = center>
+			<TR align = center>
+				<TD rowspan = 3>Day</TD>
+				<TD colspan = 3>Seminar</TD>
+			</TR>
+			
+			<TR  align = center>
+				<TD colspan = 2>Schedule</TD>
+				<TD rowspan = 2>Topic</TD>
+			</TR>
+
+			<TR  align = center>
+				<TD>Begin</TD>
+				<TD>End</TD>
+			</TR>
+			
+			<TR  align = center>
+				<TD rowspan = 2>Monday</TD>
+				<TD rowspan = 2 class="yellow">8:00 a.m.</TD>
+				<TD rowspan = 2 class="purple">5:00 p.m.</TD>
+				<TD>Intoduction to XML</TD>
+			</TR>
+			
+			<TR  align = center>
+				<TD>Validity: DTD and Relax NG</TD>
+			</TR>
+			
+			<TR  align = center>
+				<TD rowspan = 3>Tuesday</TD>
+				<TD class="yellow">8:00 a.m.</TD>
+				<TD class="yellow">11:00 p.m.</TD>
+				<TD rowspan = 2>XPath</TD>
+			</TR>
+			
+			<TR  align = center>
+				<TD class="yellow">11:00 a.m.</TD>
+				<TD class="green">2:00 p.m.</TD>
+			</TR>
+			
+			<TR  align = center>
+				<TD class="green">2:00 p.m.</TD>
+				<TD class="purple">5:00 p.m.</TD>
+				<TD rowspan = 1>XSL Transformations</TD>
+			</TR>
+			
+			<TR  align = center>
+				<TD>Wednesday</TD>
+				<TD rowspan = 1 class="yellow">8:00 a.m.</TD>
+				<TD rowspan = 1 class="green">12:00 p.m.</TD>
+				<TD>XSL Formatting Objects</TD>
+			</TR>
+
+		</TABLE>
+	
+	</BODY>
+
+
+</HTML>
