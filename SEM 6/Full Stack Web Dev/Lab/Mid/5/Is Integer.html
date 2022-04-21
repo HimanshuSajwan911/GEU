@@ -10,10 +10,15 @@
 
 <body>
 
+    <label>Input: </label>
+    <input type="text" id="input_test">
+    <button id="is_int" onclick="isInt()">Check</button>
+
     <script>
 
-        function isInt(param) {
-            if (Number.isInteger(param)) {
+        function isInt() {
+            let data = document.getElementById("input_test").value;
+            if(!isNaN(data)){
                 console.log("true");
             }
             else {
