@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume of Cube</title>
+</head>
+
+<body>
+
+    <h2>Input length to get the volume of cube</h2>
+    <form action="" method="post" id="MyForm">
+        <label for="length">Length :</label>
+        <input type="text" name="length" id="length" required>
+        <input type="submit" value="Calculate" id="submit"> <br>
+        <label for="volume">Volume:</label>
+        <input type="text" name="volume" id="volume">
+
+    </form>
+
+    <script>
+        window.onload = document.getElementById('MyForm').onsubmit = volumeOfCube;
+
+        function volumeOfCube() {
+            let volume;
+            let length = document.getElementById('length').value;
+            length = Math.abs(length);
+            volume = length * length * length;
+            volume = volume.toFixed(4);
+            document.getElementById('volume').value = volume;
+            return false;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
