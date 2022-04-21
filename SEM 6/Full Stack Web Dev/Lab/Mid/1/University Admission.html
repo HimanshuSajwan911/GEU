@@ -14,20 +14,24 @@
         .AdmissionForm{
             background-color: rgb(174, 212, 190);
             margin: 50px;
+            margin-left: 500px;
             padding: 25px;
+            width: 500px;
+            align-items: center;
         }
 
         p#heading{
             color: rgb(62, 14, 82);
             font-size: x-large;
+            text-align: center;
         }
 
         p#admform{
             color: rgb(62, 14, 82);
             margin-top: -15px;
             font-size: large;
-            margin-left: 80px;
             margin-bottom: 30px;
+            text-align: center;
         }
 
     </style>
@@ -43,9 +47,10 @@
         <form>
     
             <label> Firstname: </label>
-            <input type="text" name="firstname" size="15" />  
+            <input type="text" name="firstname" size="15" placeholder="Enter your First Name"/>  
+            <br><br>
             <label> Lastname: </label>
-            <input type="text" name="lastname" size="15" /> <br> <br>
+            <input type="text" name="lastname" size="15" placeholder="Enter your Last Name"/> <br> <br>
     
             <label>
                 Course :
@@ -78,21 +83,18 @@
                 Phone :
             </label>
             <input type="text" name="country code" value="+91" size="2" maxlength="3"/>
-            <input type="text" name="phone" maxlength="10" /> <br> <br>
-            Address:
-            <br>
-            <textarea cols="80" rows="5" value="address">
-            </textarea>
+            <input type="text" name="phone" maxlength="10" />
+
             <br> <br>
             Email:
-            <input type="email" id="email" name="email" placeholder="xyz@gmail.com" size="50"/> <br>
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com" size="40"/>
             <br> <br>
 
-            Password:
-            <input type="Password" id="pass" name="pass"> <br>
+            Address:
             <br>
-            Re-type password:
-            <input type="Password" id="repass" name="repass"> <br> <br>
+            <textarea cols="50" rows="5" name="address"></textarea>
+            
+            <br><br>
 
             <input type="button" value="Submit" />
         </form>
