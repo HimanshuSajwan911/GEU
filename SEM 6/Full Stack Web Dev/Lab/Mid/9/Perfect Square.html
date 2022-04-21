@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Square</title>
+</head>
+
+<body>
+
+    <p>0 to 100 Perfect Square or not.</p>
+    <textarea id="textarea" rows="20" cols="30"></textarea>
+
+    <script>
+        let ta = document.getElementById("textarea");
+
+        function isSquare(n) {
+            return Math.sqrt(n) % 1 === 0;
+        }
+
+        for (let i = 0; i <= 100; i++) {
+            
+            let res = isSquare(i);
+
+            if(res){
+                ta.append(i + " Perfect Square \r\n");
+            }
+            else{
+                ta.append(i + " not\r\n");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,11 @@
     <title>University Admission</title>
 
     <style>
-        body{
+        body {
             background-color: rgb(201, 193, 150);
         }
 
-        .AdmissionForm{
+        .AdmissionForm {
             background-color: rgb(174, 212, 190);
             margin: 50px;
             margin-left: 500px;
@@ -20,38 +21,38 @@
             align-items: center;
         }
 
-        p#heading{
+        p#heading {
             color: rgb(62, 14, 82);
             font-size: x-large;
             text-align: center;
         }
 
-        p#admform{
+        p#admform {
             color: rgb(62, 14, 82);
             margin-top: -15px;
             font-size: large;
             margin-bottom: 30px;
             text-align: center;
         }
-
     </style>
 
 </head>
+
 <body>
 
     <div class="AdmissionForm">
-        
-       <p id="heading">Graphic Era Deemed to be University</p>
-       <p id="admform">Admission Form </p>
-        
+
+        <p id="heading">Graphic Era Deemed to be University</p>
+        <p id="admform">Admission Form </p>
+
         <form>
-    
+
             <label> Firstname: </label>
-            <input type="text" name="firstname" size="15" placeholder="Enter your First Name"/>  
+            <input type="text" name="firstname" size="15" placeholder="Enter your First Name" />
             <br><br>
             <label> Lastname: </label>
-            <input type="text" name="lastname" size="15" placeholder="Enter your Last Name"/> <br> <br>
-    
+            <input type="text" name="lastname" size="15" placeholder="Enter your Last Name" /> <br> <br>
+
             <label>
                 Course :
             </label>
@@ -64,41 +65,42 @@
                 <option value="MCA">MCA</option>
                 <option value="M.Tech">M.Tech</option>
             </select>
-    
+
             <br>
             <br>
             <label>
                 Gender :
             </label>
-            <input type="radio" name="gender" value="male" id="male" /> <label for="male">Male</label> 
-            <input type="radio" name="gender" value="female" id="female" /> <label for="female">Female</label> 
+            <input type="radio" name="gender" value="male" id="male" /> <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female" /> <label for="female">Female</label>
             <input type="radio" name="gender" value="other" id="other" /> <label for="other">Other</label>
             <br>
             <br>
 
-            <label>Date of Birth:</label> 
+            <label>Date of Birth:</label>
             <input type="date" name="dob" /> <br> <br>
-    
+
             <label>
                 Phone :
             </label>
-            <input type="text" name="country code" value="+91" size="2" maxlength="3"/>
+            <input type="text" name="country code" value="+91" size="2" maxlength="3" />
             <input type="text" name="phone" maxlength="10" />
 
             <br> <br>
             Email:
-            <input type="email" id="email" name="email" placeholder="xyz@gmail.com" size="40"/>
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com" size="40" />
             <br> <br>
 
             Address:
             <br>
             <textarea cols="50" rows="5" name="address"></textarea>
-            
+
             <br><br>
 
             <input type="button" value="Submit" />
         </form>
     </div>
-    
+
 </body>
+
 </html>
