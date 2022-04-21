@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid Email Password</title>
+
+</head>
+
+<body>
+    <div class="mail">
+        <h2>Input an email</h2>
+        <form name="form" action="#">
+
+            <input type='text' name='text1' id="email" />
+            <input type="submit" name="submit" value="Check" onclick="validateEmail()" required />
+
+
+            <h2>Input password</h2>
+
+            <input type='password' name='text2' id="password" />
+            <input type="submit" name="submit" value="Check" onclick="validatePassword()" required />
+
+        </form>
+
+    </div>
+
+
+</body>
+<script>
+    function validateEmail() {
+        let email = document.getElementById("email").value;
+        var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (email.match(mailformat)) {
+            alert("Valid email address!");
+            return true;
+        }
+        else {
+            alert("Invalid email address!");
+            return false;
+        }
+    }
+    function validatePassword() {
+        let password = document.getElementById("password").value;
+        let password_pattern = /^[a-zA-Z]\w{7,14}$/;
+        if (password.match(password_pattern)) {
+            alert("Valid password!");
+            return true;
+        }
+        else {
+            alert("Invalid password!");
+            return false;
+        }
+    }
+
+
+</script>
+
+</html>
